@@ -1,4 +1,5 @@
-import { useRef, CSSProperties } from 'react';
+import { useRef } from 'react';
+import type { CSSProperties } from 'react';
 import { motion, useInView } from 'framer-motion';
 
 interface FadeInSectionProps {
