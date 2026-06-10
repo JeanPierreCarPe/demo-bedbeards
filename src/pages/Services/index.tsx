@@ -62,7 +62,6 @@ export default function ServicesPage() {
                       ))}
                     </div>
 
-                    <Button text={service.cta} href="/contact" />
                   </div>
                 </div>
               </FadeInSection>

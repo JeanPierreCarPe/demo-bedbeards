@@ -2,17 +2,10 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import FadeInSection from '../../../components/FadeInSection';
 import SectionHeader from '../../../components/SectionHeader';
-import Button from '../../../components/Button';
 import Divider from '../../../components/Divider';
 import { services, servicesSection } from '../../../data/siteContent';
 
 const LAYOUT_EASE = [0.22, 1, 0.36, 1] as const;
-
-const serviceCtaHref: Record<string, string> = {
-  cuts: '/contact',
-  treatments: '/services',
-  products: '/products',
-};
 
 export default function Services() {
   const [activeTab, setActiveTab] = useState<number | null>(null);
@@ -89,7 +82,6 @@ export default function Services() {
                     <p className="font-light text-[15px] leading-[24px] text-[rgba(15,15,15,0.75)]">
                       {services[activeTab].description}
                     </p>
-                    <Button text={services[activeTab].cta} href={serviceCtaHref[services[activeTab].id]} />
                     <div className="flex gap-2 h-[140px] w-full">
                       {services[activeTab].previewImages.map((img, j) => (
                         <div key={j} className="flex-1 relative overflow-hidden">
@@ -171,7 +163,6 @@ export default function Services() {
                             <p className="font-light text-[16px] leading-[25px] text-[rgba(15,15,15,0.75)]">
                               {service.description}
                             </p>
-                            <Button text={service.cta} href={serviceCtaHref[service.id]} />
                           </div>
 
                           <div className="flex flex-1 gap-5 min-h-0 drop-shadow-[0_0_5px_rgba(0,0,0,0.3)]">
