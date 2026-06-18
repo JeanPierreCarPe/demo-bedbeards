@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import FadeInSection from '../../components/FadeInSection';
-import PageHero from '../../components/PageHero';
-import Button from '../../components/Button';
-import Divider from '../../components/Divider';
-import { aboutPage, barbers, cta } from '../../data/siteContent';
-import type { BarberData } from '../../types';
+import FadeInSection from '../components/ui/FadeInSection';
+import PageHero from '../components/ui/PageHero';
+import Button from '../components/ui/Button';
+import Divider from '../components/ui/Divider';
+import { aboutPage, barbers, cta } from '../data/siteContent';
+import type { BarberData } from '../types';
 
 type BarberWithBio = BarberData & { bio: string; yearsExp: number };
 
@@ -22,7 +22,7 @@ const InstagramIcon = () => (
   </svg>
 );
 
-export default function About() {
+export default function AboutPage() {
   const [expandedBarber, setExpandedBarber] = useState<string | null>(null);
   const barbersWithBio = barbers as BarberWithBio[];
 

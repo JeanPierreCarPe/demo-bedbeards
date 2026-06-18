@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import Button from '../../../components/Button';
-import { hero } from '../../../data/siteContent';
+import Button from '../ui/Button';
+import { hero } from '../../data/siteContent';
 
 const FADE = { duration: 0.9, ease: 'easeInOut' as const };
 

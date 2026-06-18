@@ -1,6 +1,6 @@
-import FadeInSection from '../../../components/FadeInSection';
-import Button from '../../../components/Button';
-import { about } from '../../../data/siteContent';
+import FadeInSection from '../ui/FadeInSection';
+import Button from '../ui/Button';
+import { about } from '../../data/siteContent';
 
 export default function AboutUs() {
   return (

@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import FadeInSection from '../../components/FadeInSection';
-import PageHero from '../../components/PageHero';
-import Button from '../../components/Button';
-import { blogPosts } from '../../data/siteContent';
-import type { BlogCategory } from '../../types';
+import FadeInSection from '../components/ui/FadeInSection';
+import PageHero from '../components/ui/PageHero';
+import Button from '../components/ui/Button';
+import { blogPosts } from '../data/siteContent';
+import type { BlogCategory } from '../types';
 
 type FilterValue = 'all' | BlogCategory;
 
@@ -26,7 +26,7 @@ const categoryLabel: Record<BlogCategory, string> = {
   culture: 'Culture',
 };
 
-export default function Blog() {
+export default function BlogPage() {
   const [activeFilter, setActiveFilter] = useState<FilterValue>('all');
 
   const isFiltered = activeFilter !== 'all';

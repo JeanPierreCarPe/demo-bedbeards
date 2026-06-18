@@ -1,10 +1,10 @@
 import { useParams, Link } from 'react-router-dom';
-import FadeInSection from '../../components/FadeInSection';
-import Button from '../../components/Button';
-import Divider from '../../components/Divider';
-import { blogPosts } from '../../data/siteContent';
+import FadeInSection from '../components/ui/FadeInSection';
+import Button from '../components/ui/Button';
+import Divider from '../components/ui/Divider';
+import { blogPosts } from '../data/siteContent';
 
-export default function BlogPost() {
+export default function BlogPostPage() {
   const { slug } = useParams<{ slug: string }>();
   const post = blogPosts.find(p => p.slug === slug);
   const related = blogPosts.filter(p => p.slug !== slug);

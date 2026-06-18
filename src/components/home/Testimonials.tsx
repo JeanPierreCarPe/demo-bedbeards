@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import FadeInSection from '../../../components/FadeInSection';
-import Divider from '../../../components/Divider';
-import { testimonials, testimonialsSection } from '../../../data/siteContent';
+import FadeInSection from '../ui/FadeInSection';
+import Divider from '../ui/Divider';
+import { testimonials, testimonialsSection } from '../../data/siteContent';
 
 export default function Testimonials() {
   const [active, setActive] = useState(0);

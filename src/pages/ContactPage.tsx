@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import FadeInSection from '../../components/FadeInSection';
-import { brand, contactPage, barbers } from '../../data/siteContent';
+import FadeInSection from '../components/ui/FadeInSection';
+import { brand, contactPage, barbers } from '../data/siteContent';
 
 type ServiceId = 'cuts' | 'treatments' | 'products' | 'other';
 
@@ -18,7 +18,7 @@ const inputClass =
   'w-full bg-transparent border-b border-white/15 focus:border-[#ba704f] outline-none py-3 font-light text-[16px] text-white placeholder:text-white/25 transition-colors duration-200';
 const labelClass = 'font-light text-[11px] text-white/35 uppercase tracking-widest';
 
-export default function Contact() {
+export default function ContactPage() {
   const [form, setForm] = useState({
     name: '',
     email: '',

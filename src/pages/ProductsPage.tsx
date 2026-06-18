@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import FadeInSection from '../../components/FadeInSection';
-import PageHero from '../../components/PageHero';
-import Divider from '../../components/Divider';
-import Button from '../../components/Button';
-import { products, productsPage, cta } from '../../data/siteContent';
-import type { Product } from '../../types';
+import FadeInSection from '../components/ui/FadeInSection';
+import PageHero from '../components/ui/PageHero';
+import Divider from '../components/ui/Divider';
+import Button from '../components/ui/Button';
+import { products, productsPage, cta } from '../data/siteContent';
+import type { Product } from '../types';
 
 type CategoryFilter = 'all' | Product['category'];
 
@@ -26,7 +26,7 @@ const categoryLabel: Record<Product['category'], string> = {
   tool: 'Tool / Kit',
 };
 
-export default function Products() {
+export default function ProductsPage() {
   const [activeFilter, setActiveFilter] = useState<CategoryFilter>('all');
 
   const filtered = activeFilter === 'all'

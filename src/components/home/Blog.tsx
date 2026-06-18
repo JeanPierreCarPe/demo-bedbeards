@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
-import FadeInSection from '../../../components/FadeInSection';
-import SectionHeader from '../../../components/SectionHeader';
-import Divider from '../../../components/Divider';
-import { blogPosts, blogSection } from '../../../data/siteContent';
+import FadeInSection from '../ui/FadeInSection';
+import SectionHeader from '../ui/SectionHeader';
+import Divider from '../ui/Divider';
+import { blogPosts, blogSection } from '../../data/siteContent';
 
 const ArrowIcon = () => (
   <svg width="14" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">

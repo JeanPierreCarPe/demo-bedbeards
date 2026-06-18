@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { brand } from '../data/siteContent';
+import { brand } from '../../data/siteContent';
 
 const FacebookIcon = () => (
   <svg width="24" height="24" viewBox="0 0 24 24" fill="white">

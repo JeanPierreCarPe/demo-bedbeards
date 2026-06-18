@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import Button from './Button';
-import { brand } from '../data/siteContent';
+import Button from '../ui/Button';
+import { brand } from '../../data/siteContent';
 
 const navLinks = [
   { label: 'About', href: '/about' },

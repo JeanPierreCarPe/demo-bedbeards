@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import FadeInSection from '../../components/FadeInSection';
-import PageHero from '../../components/PageHero';
-import { galleryItems, galleryPage } from '../../data/siteContent';
-import type { GalleryItem } from '../../types';
+import FadeInSection from '../components/ui/FadeInSection';
+import PageHero from '../components/ui/PageHero';
+import { galleryItems, galleryPage } from '../data/siteContent';
+import type { GalleryItem } from '../types';
 
 type Filter = 'all' | GalleryItem['category'];
 
@@ -14,7 +14,7 @@ const filters: { value: Filter; label: string }[] = [
   { value: 'treatments', label: 'Treatments' },
 ];
 
-export default function Gallery() {
+export default function GalleryPage() {
   const [activeFilter, setActiveFilter] = useState<Filter>('all');
   const [lightbox, setLightbox] = useState<GalleryItem | null>(null);
 

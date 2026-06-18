@@ -1,7 +1,7 @@
-import FadeInSection from '../../../components/FadeInSection';
-import Button from '../../../components/Button';
-import Divider from '../../../components/Divider';
-import { cta } from '../../../data/siteContent';
+import FadeInSection from '../ui/FadeInSection';
+import Button from '../ui/Button';
+import Divider from '../ui/Divider';
+import { cta } from '../../data/siteContent';
 
 export default function CTA() {
   return (

@@ -1,7 +1,7 @@
-import FadeInSection from '../../../components/FadeInSection';
-import SectionHeader from '../../../components/SectionHeader';
-import Divider from '../../../components/Divider';
-import { barbers, barbersSection } from '../../../data/siteContent';
+import FadeInSection from '../ui/FadeInSection';
+import SectionHeader from '../ui/SectionHeader';
+import Divider from '../ui/Divider';
+import { barbers, barbersSection } from '../../data/siteContent';
 
 const FacebookIcon = () => (
   <svg width="24" height="24" viewBox="0 0 24 24" fill="white">

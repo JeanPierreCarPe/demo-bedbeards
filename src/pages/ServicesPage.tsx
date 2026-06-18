@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import FadeInSection from '../../components/FadeInSection';
-import PageHero from '../../components/PageHero';
-import Button from '../../components/Button';
-import Divider from '../../components/Divider';
-import SectionHeader from '../../components/SectionHeader';
-import { services, servicesPage, servicePricing, cta } from '../../data/siteContent';
+import FadeInSection from '../components/ui/FadeInSection';
+import PageHero from '../components/ui/PageHero';
+import Button from '../components/ui/Button';
+import Divider from '../components/ui/Divider';
+import SectionHeader from '../components/ui/SectionHeader';
+import { services, servicesPage, servicePricing, cta } from '../data/siteContent';
 
 export default function ServicesPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
